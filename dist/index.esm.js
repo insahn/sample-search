@@ -160,3 +160,4 @@ var SampleSearch = function SampleSearch() {
 };
 
 export { SampleSearch };
+//# sourceMappingURL=index.esm.js.map

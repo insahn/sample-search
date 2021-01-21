@@ -168,3 +168,4 @@ var SampleSearch = function SampleSearch() {
 };
 
 exports.SampleSearch = SampleSearch;
+//# sourceMappingURL=index.cjs.js.map
