@@ -8,7 +8,7 @@ import { terser } from "rollup-plugin-terser";
 export default {
   input: pkg.source,
   output: [
-    { file: pkg.main, format: "cjs", sourcemap: true },
+    { file: pkg.main, format: "cjs", sourcemap: true, exports: "default" },
     { file: pkg.module, format: "esm", sourcemap: true },
   ],
   plugins: [
