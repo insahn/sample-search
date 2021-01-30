@@ -1,17 +1,17 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
   devtool: 'source-map',
   output: {
-    path: path.resolve(__dirname,'dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     libraryTarget: 'umd',
-    library: 'SampleSearch'
+    library: 'SampleSearch',
   },
   resolve: {
-    extensions: ['.js', '.jsx', 'json']
+    extensions: ['.js', '.jsx', 'json'],
   },
   module: {
     rules: [
@@ -21,15 +21,15 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-react', '@babel/preset-env']
-          }
-        }
+            presets: ['@babel/preset-react', '@babel/preset-env'],
+          },
+        },
       },
     ],
   },
   externals: {
-    'react': 'react',
+    react: 'react',
     'react-dom': 'react-dom',
-    "@apollo/client": "@apollo/client"
-  }
-};
+    '@apollo/client': '@apollo/client',
+  },
+}
