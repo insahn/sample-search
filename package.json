@@ -1,13 +1,13 @@
 {
-  "name": "sample-search-manual",
+  "name": "sample-search",
   "version": "0.1.0",
   "private": true,
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.js",
   "source": "src/index.js",
   "scripts": {
-    "build": "rollup -c",
-    "build-watch": "rollup -c -w"
+    "build": "rm -rf ./dist && webpack --progress --color && npm pack",
+    "dev": "webpack --progress --color --watch",
+    "clean": "rm -rf ./node_modules && rm package-lock.json"
   },
   "eslintConfig": {
     "extends": [
@@ -27,22 +27,14 @@
       "last 1 safari version"
     ]
   },
-  "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "graphql": "^15.4.0",
-    "@apollo/client": "^3.2.5"
-  },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
-    "@rollup/plugin-babel": "^5.2.2",
-    "rollup": "^2.37.1",
-    "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2"
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
   },
   "files": [
     "dist"

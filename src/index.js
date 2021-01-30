@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { gql, useQuery } from "@apollo/client";
 
 const GET_USERS = gql`
@@ -19,9 +19,9 @@ const GET_USERS = gql`
   }
 `;
 
-const SampleSearch = () => {
-  const [page, setCurrentPage] = useState(1);
-  const [search, setSearch] = useState("");
+export const SampleSearch = () => {
+  const [page, setCurrentPage] = React.useState(1);
+  const [search, setSearch] = React.useState("");
 
   const nextPage = React.useCallback(() => {
     setCurrentPage((p) => p + 1);
@@ -38,7 +38,7 @@ const SampleSearch = () => {
       search,
       sort: "USERNAME_DESC",
       page,
-      perPage: 20,
+      perPage: 5,
     },
   });
 
@@ -74,4 +74,3 @@ const SampleSearch = () => {
   );
 };
 
-export default SampleSearch;
