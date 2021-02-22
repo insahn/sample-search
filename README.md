@@ -1,1 +1,1 @@
-## Sample search Grapql
+## Sample Search GraphQL
