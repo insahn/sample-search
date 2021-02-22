@@ -1,14 +1,14 @@
 {
-  "name": "sample-search",
+  "name": "sample-search-insahn",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "dist/index.js",
   "source": "src/index.js",
   "scripts": {
     "build": "webpack --progress --color",
     "dev": "webpack --progress --color --watch",
     "clean": "rm -rf ./node_modules && rm package-lock.json",
-    "prepare": "run-s build"
+    "prepare": "npm run build"
   },
   "eslintConfig": {
     "extends": [
