@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "source": "src/index.js",
   "scripts": {
-    "co:login": "aws codeartifact login --tool npm --repository sample-search --domain sample-search --domain-owner 653522151148",
+    "co:login": "aws codeartifact login --tool npm --repository samples-search-package --domain samples --domain-owner 653522151148",
     "build": "webpack --progress --color",
     "dev": "webpack --progress --color --watch",
     "clean": "rm -rf ./node_modules && rm package-lock.json"
