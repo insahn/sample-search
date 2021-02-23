@@ -1,5 +1,5 @@
 {
-  "name": "@gld/sample-search",
+  "name": "sample-search",
   "version": "0.1.2",
   "main": "dist/index.js",
   "source": "src/index.js",
