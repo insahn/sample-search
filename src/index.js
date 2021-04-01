@@ -61,7 +61,7 @@ export const SampleSearch = () => {
         </button>
       </div>
       {loading ? (
-        "Loading..........."
+        "Loading....."
       ) : (
         <div>
           {data?.Page?.users.map((user) => {
