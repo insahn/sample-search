@@ -57,11 +57,11 @@ export const SampleSearch = () => {
           onClick={() => nextPage()}
           disabled={!data?.Page?.pageInfo.hasNextPage || loading}
         >
-          next
+          next is next
         </button>
       </div>
       {loading ? (
-        "Loading."
+        "Loading......"
       ) : (
         <div>
           {data?.Page?.users.map((user) => {
