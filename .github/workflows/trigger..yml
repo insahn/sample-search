@@ -7,7 +7,5 @@ name: Trigger Release
 on:
   push:
     branches: [ develop, v2 ]
-jobs:
-  build:
-    runs-on: ubuntu-latest
+
 run: "echo "TRIGGER ON COMMIT MESSAGE"
