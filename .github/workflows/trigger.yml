@@ -1,6 +1,6 @@
 name: Trigger Release
 on:
-  push:
+  pull_request:
     branches: [ develop, v2 ]
 jobs:
   build:
